@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'therubyracer'
 gem 'pg'
+gem 'puma'
 group :development, :test do
   gem 'byebug'
 end
