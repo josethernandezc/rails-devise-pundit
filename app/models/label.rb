@@ -1,4 +1,4 @@
 class Label < ActiveRecord::Base
-  validates :user_id, :name, :colour, presence: true
-  validates :name, uniqueness: { scope: :colour }
+  validates :name, :colour, presence: true
+  validates :name, uniqueness: { scope: :colour, message: "has already been taken with that colour" }
 end
