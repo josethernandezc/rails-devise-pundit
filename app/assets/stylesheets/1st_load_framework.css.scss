@@ -80,3 +80,11 @@ section {
   @extend .btn-primary;
   @extend .btn-xs;
 }
+.field_with_errors {
+  display: inline-block;
+}
+.colour {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
