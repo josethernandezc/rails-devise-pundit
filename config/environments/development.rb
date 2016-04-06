@@ -57,4 +57,6 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.action_mailer.delivery_method = :letter_opener
+
+  COLOURS = YAML.load_file("#{ ::Rails.root }/config/colours.yml")
 end

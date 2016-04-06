@@ -19,7 +19,7 @@
   </p>
   <p>
     <%= f.label :colour %><br>
-    <%= f.text_field :colour %>
+    <%= f.select :colour, COLOURS["standard"].map{ |c| [c.titleize, c] }, include_blank: true %>
   </p>
   <p>
     <%= f.submit %>
