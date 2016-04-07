@@ -18,7 +18,7 @@
   </p>
   <p>
     <%= f.label :colour %><br>
-    <%= f.select :colour, COLOURS["standard"].map{ |c| [c.titleize, c] }, include_blank: true %>
+    <%= f.select :colour, COLOURS["standard"].map{ |c| [c.titleize, c] }, prompt: "Select an option" %>
   </p>
   <p>
     <%= f.submit %>
