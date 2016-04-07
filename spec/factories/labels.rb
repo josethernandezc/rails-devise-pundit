@@ -1,6 +1,6 @@
 FactoryGirl.define do
-  factory :label do
-    
+  factory :blue, class: Label do
+    name "blue"
+    colour "sarasa"
   end
-
 end
