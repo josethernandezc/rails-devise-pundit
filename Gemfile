@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'therubyracer'
 gem 'pg'
 gem 'puma'
-gem 'letter_opener', :group => :development
+gem 'letter_opener'
 group :development, :test do
   gem 'byebug'
 end
