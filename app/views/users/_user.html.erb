@@ -1,5 +1,11 @@
 <td>
   <%= link_to user.email, user %>
+  </br>
+  <% user.labels.each do |label| %>
+    <h5 class="user-label">
+      <span class="label" style="background-color:<%= label.colour %>;"><%= label.name %></span>
+    </h5>
+  <% end %>
 </td>
 <td>
   <%= form_for(user) do |f| %>

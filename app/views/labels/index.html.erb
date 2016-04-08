@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <h3>Labels</h3>
+    <div class="column">
+      <table class="table">
+        <tbody>
+          <% @labels.each do |label| %>
+            <tr>
+              <td>
+                <%= link_to label.name, edit_label_path(label) %>
+              </td>
+              <td>
+                <div class="colour" style="background-color:<%= label.colour %>;"></div>
+              </td>
+              <td>
+                <%= link_to("Delete label", label_path(label), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button-xs') %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <%= link_to "New label", new_label_path %>
+    </div>
+  </div>
+</div>
